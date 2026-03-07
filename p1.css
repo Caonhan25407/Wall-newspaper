@@ -161,10 +161,7 @@ footer {
     color: white;
     padding: 30px 20px;
     transition: background-color 0.3s ease;
-}
-footer:hover {
-    background-color: #F56A79;	 
-}
+
 .container {
     display: flex;
 	justify-content: space-around;      /* Căn đều các phần tử, tạo khoảng cách đều */
@@ -200,4 +197,5 @@ footer p:hover {
 	font-size: 20px;
 	text-align: left;
 	font-family: 'Fira Sans Condensed', sans-serif;		
+
 }
