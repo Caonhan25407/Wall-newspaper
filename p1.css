@@ -1,0 +1,203 @@
+
+/* Định dạng thanh điều hướng */
+.navbar {
+   background-color: #f56a79; /* Màu nền */
+   overflow: hidden;
+    position: fixed; /* Giữ cố định */
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000; /* Đảm bảo thanh luôn nằm trên các phần tử khác */
+}
+
+/* Định dạng các liên kết trong thanh điều hướng */
+.navbar a {
+   float: left; /* Đặt liên kết vào một hàng ngang */
+   display: block; /* Hiển thị là khối để có thể định dạng */
+   color: #fff; /* Màu chữ */
+   text-align: center; /* Canh giữa văn bản */
+   padding: 14px 16px; /* Khoảng cách giữa các liên kết */
+   text-decoration: none; /* Loại bỏ gạch dưới liên kết */
+   font-family: 'Fira Sans Condensed', sans-serif;
+}
+/* Định dạng khi rê chuột qua liên kết */
+.navbar a:hover {
+   background-color: #fa9da7; /* Màu nền khi rê chuột qua */
+   color: red;
+}
+
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5ae;
+    line-height: 1.6;
+    color: #333;
+}
+
+.logo{
+  float: left; /* Căn ảnh sang bên trái */
+  width: 250px; /* Thiết lập chiều rộng cho ảnh */
+  height: 250px; /* Thiết lập chiều cao cho ảnh */
+  margin-top: 30px;
+}
+.ran{
+  float: right; /* Căn ảnh sang bên phải */
+  width: 250px; /* Thiết lập chiều rộng cho ảnh */
+  height: 250px; /* Thiết lập chiều cao cho ảnh */
+  margin-top: 30px;
+}
+
+/* Phần nội dung */
+.section {
+    border: 2px solid #ccc; /* Đường viền */
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: white;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+}
+
+/* Tiêu đề chính */
+h1 {
+	font-size: 330%;
+	font-weight: 1000;
+	font-family: 'Merienda', sans-serif;
+    text-align: center;
+    color: #0091eb;
+    margin-top: 100px;
+	}
+h1:hover {
+  color: #ffd700;  /* Màu chữ thay đổi khi hover */
+}
+
+h2 {
+	font-size: 200%;
+	font-family: 'Merienda', fantasy;
+	font-style: italic;
+	font-weight: 900;
+    text-align: center;
+    color: #ff5e70 ;
+    margin-top: 20px;
+}
+h2:hover {
+  color: #ffd700;  /* Màu chữ thay đổi khi hover */
+}
+
+h3 {
+    text-align: center;
+    color: #3a88fc;
+    margin-bottom: 10px;
+	transition: color 0.3s ease;  /* Thêm hiệu ứng chuyển màu trong 0.3 giây */
+}
+h3:hover {
+  color: #fa259a;  /* Màu chữ thay đổi khi hover */
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Hình ảnh trong góc ảnh */
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border: 2px solid #ccc; /* Đường viền cho hình ảnh */
+    border-radius: 5px;
+	transition: transform 0.3s ease; /* Thiết lập thời gian và hiệu ứng chuyển động */
+}
+.image:hover {
+  transform: scale(1.05); /* Phóng to lên khi hover */
+}
+
+/* Video */
+video {
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.note{
+	font-family: 'Merienda', fantasy;
+	font-style: italic;
+	font-weight: 900;
+    text-align: center;
+	font-size: 15px;
+}
+
+/* Mặc định */
+.link {
+    color: #006eff; /* Màu chữ mặc định */
+    text-decoration: none; /* Xóa gạch chân */
+    font-family: 'Merienda', fantasy;
+}
+/* Khi di chuột qua đường link */
+.link:hover {
+    color: #3a88fc; /* Màu chữ khi hover */
+	text-decoration: none; /* Xóa gạch chân */
+}
+/* Khi đường link đã được truy cập */
+.link:visited {
+    color: #3a88fc; /* Màu chữ cho liên kết đã truy cập */
+	text-decoration: none; /* Xóa gạch chân */
+}
+/* Khi đường link đang được nhấn */
+.link:active {
+    color: #006eff; /* Màu chữ khi nhấn vào đường link */
+}
+
+/* Chân trang */
+footer {
+    text-align: center;
+    background-color: #039eff;
+    color: white;
+    padding: 30px 20px;
+    transition: background-color 0.3s ease;
+}
+footer:hover {
+    background-color: #F56A79;	 
+}
+.container {
+    display: flex;
+	justify-content: space-around;      /* Căn đều các phần tử, tạo khoảng cách đều */
+	align-items: center;                /* Căn giữa các phần tử theo chiều dọc */
+	padding: 10px 20px; 
+	grid-template-columns: repeat(3, 1fr); /* Chia đều 3 cột */
+}
+footer a {
+    color: #4a17d4;
+	text-decoration: none; /* Xóa gạch chân */
+}
+footer p {
+    color: #fff;
+}
+footer a:hover {
+    color: #ffea03;
+}
+footer p:hover {
+    color: #ffea03;
+	font-size: 20px;
+}
+.item1 {
+	font-size: 20px;
+	text-align: left;
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
+.item2 {
+	font-size: 20px;
+	text-align: left;
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
+.item3 {
+	font-size: 20px;
+	text-align: left;
+	font-family: 'Fira Sans Condensed', sans-serif;		
+}
