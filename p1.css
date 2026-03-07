@@ -157,7 +157,7 @@ video {
 /* Chân trang */
 footer {
     text-align: center;
-    background-color: #039eff;
+    background-color: #F56A79;
     color: white;
     padding: 30px 20px;
     transition: background-color 0.3s ease;
@@ -199,3 +199,4 @@ footer p:hover {
 	font-family: 'Fira Sans Condensed', sans-serif;		
 
 }
+
