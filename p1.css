@@ -1,31 +1,52 @@
 
 /* Định dạng thanh điều hướng */
-.navbar {
-   background-color: #f56a79; /* Màu nền */
-   overflow: hidden;
-    position: fixed; /* Giữ cố định */
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1000; /* Đảm bảo thanh luôn nằm trên các phần tử khác */
+.navbar{
+    background-color:#c41d00;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:10px 30px;
+    z-index:1000;
+
+    display:flex;
+    align-items:center;      
 }
 
-/* Định dạng các liên kết trong thanh điều hướng */
-.navbar a {
-   float: left; /* Đặt liên kết vào một hàng ngang */
-   display: block; /* Hiển thị là khối để có thể định dạng */
-   color: #fff; /* Màu chữ */
-   text-align: center; /* Canh giữa văn bản */
-   padding: 14px 16px; /* Khoảng cách giữa các liên kết */
-   text-decoration: none; /* Loại bỏ gạch dưới liên kết */
-   font-family: 'Fira Sans Condensed', sans-serif;
-}
-/* Định dạng khi rê chuột qua liên kết */
-.navbar a:hover {
-   background-color: #fa9da7; /* Màu nền khi rê chuột qua */
-   color: red;
+.logo-group{
+    display:flex;
+    gap:15px;    /* khoảng cách giữa logo */
+    align-items:center;             
 }
 
+.logo{
+    width:70px;
+    height:auto;
+}
+
+.logoC3{
+    width:70px;
+    height:auto;
+
+}
+
+/* menu */
+.menu{
+    margin-left:auto; /* đẩy menu sang phải */
+    display:flex;
+    gap:30px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-family:'Bungee Inline', fantasy;
+    font-size:15px;
+}
+
+.menu a:hover{
+    color:#ffd700;
+}
 /* Reset cơ bản */
 * {
     margin: 0;
@@ -199,4 +220,5 @@ footer p:hover {
 	font-family: 'Fira Sans Condensed', sans-serif;		
 
 }
+
 
